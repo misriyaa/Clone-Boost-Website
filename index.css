@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+  margin: 0%;
+}
+
+/* <!--TOP FIND A STORE AND FREE GROUND OFFER--> */
+.findAStore {
+  background-color: rgb(4, 4, 26);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: clamp(10px, 4vw, 60px);
+}
+.left a {
+  color: white;
+  text-decoration: none;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+.right a {
+  text-decoration: none;
+  color: azure;
+}
+@media (max-width: 992px) {
+  .findAStore {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0cap;
+  }
+  .left a {
+    margin-left: 0px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .right {
+    display: none;
+  }
+}
+
+/* NAVBAR */
+#down {
+  -webkit-text-stroke: 1.5px black;
+  font-size: large;
+}
+.iconn {
+  font-size: 23px !important;
+  -webkit-text-stroke: 1px rgb(255, 0, 0);
+}
+.navbar {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 999;
+}
+
+/* SHOP BY CATEGORY */
+.nav-hover {
+  position: relative;
+}
+
+.nav-hover .hover-box {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 128px; /* space under text */
+  width: 100vw;
+  /* height: 62vh; */
+  background-color: rgb(248, 244, 239);
+  display: none;
+  transition: 0.3s ease;
+  z-index: 9999;
+}
+
+/* show on hover */
+.nav-hover:hover .hover-box {
+  display: block;
+}
+/* optional shadow */
+.hover-box {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* remove ul default style */
+.hover-box ul {
+  list-style: none;
+  padding: 0;
+}
+/* link styling */
+.hover-box a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* --------------------------------- */
+
+/* ABOUT us */
+.aboutus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.aboutimgmain {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  width: 70%;
+}
+.aboutimgmain img {
+  border-radius: 0 30px 0 30px;
+}
+
+/* --------------------------------- */
+
+/* HERO SECTION */
+.heroSection {
+  background-color: #e5392f; /* red background */
+  padding: 50px 40px;
+  padding-top: 80px;
+  background-image: url(./images/boost\ 2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroText h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.heroText p {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.heroText .btn {
+  margin-top: 5px;
+  padding: 10px 25px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.heroText small {
+  color: white;
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+.heroSection img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .heroText h2 {
+    font-size: 2rem;
+  }
+  .heroSection img {
+    display: block;
+  }
+  .heroSection {
+    background-image: none;
+    padding: 0px 0px;
+    background-color:#d62c2c
+  }
+}
+
+/* EXPLORE BOOST */
+
+.textt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.textt h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.textt p {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.highNutrition {
+  background-image: url(./images/High\ Protein\ Nutrition.jpg);
+}
+.everyNutrition {
+  background-image: url(./images/Everyday\ Nutrition.jpg);
+}
+.protienNutrition {
+  background-image: url(./images/Diabetes\ Friendly\ Nutrition.jpg);
+}
+.protienNutrition {
+  background-image: url(./images/High\ Calorie\ Nutrition.jpg);
+}
+
+.highNutrition,
+.everyNutrition,
+.protienNutrition{
+  height: 386px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;   /* important */
+  overflow: hidden;     /* important */
+  color: white;
+}
+
+/* normal text position */
+.highNutrition h2,
+.everyNutrition h2,
+.protienNutrition h2{
+  position: absolute;
+  /* bottom: 20px; */
+  left: 20px;
+  z-index: 2;
+}
+
+.overlay{
+  position: absolute;
+  background: rgb(255, 8, 8);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  transform: translateY(-100%);
+  transition: 0.6s ease;
+}
+
+.highNutrition:hover .overlay,
+.everyNutrition:hover .overlay,
+.protienNutrition:hover .overlay{
+  transform: translateY(0);
+}
+
+.highNutrition:hover h2,
+.everyNutrition:hover h2,
+.protienNutrition:hover h2{
+  opacity: 0;
+}
+
+
+.row h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+.col-12 {
+  position: relative;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #d62c2c6d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.col-12:hover .overlay {
+  opacity: 1;
+}
+
+/* QUIZ */
+.quiz{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* CORP */
+.corp p {
+  color: rgb(0, 0, 0);
+  font-size: 1.2rem;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 2;
+}
+
+/* YUMMMY */
+.yummy{
+  background-image: url(./images/review-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.yummytext{
+  max-width: 800px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+
+.yummytext h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.yummytext p{
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+/* 📱 SMALL SCREEN FIX */
+@media (max-width: 768px){
+  .yummy{
+    background-position: bottom center;   /* 👈 push image down */
+    min-height: auto;                     /* 👈 IMPORTANT */
+    padding-bottom: 120px;                /* give space for image */
+  }
+
+  .yummytext{
+    text-align: center;
+    align-items: center;
+  }
+
+  .yummytext h2{
+    font-size: 1.4rem;
+  }
+
+  .yummytext p{
+    font-size: 1rem;
+  }
+}
+
+/* FIND A STORE */
+.findStore{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: aliceblue; */
+}
+.findStore h2{
+font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.FindAstore{
+  background-color: aliceblue;
+  
+}
+@media (max-width: 768px){
+  .findStore{
+    flex-direction: column;     /* stack text & button */
+    text-align: center;
+  }
+
+  .findStore a{
+    display: inline-flex;       /* button behaves well */
+    justify-content: center;
+    align-items: center;
+    width: 100%;                /* full width button */
+    max-width: 300px;           /* not too wide */
+  }
+}
+
+/* JOIN OUR COMMUNITY */
+.joinCommunity{
+  min-height: 100vh;
+   background: linear-gradient(rgba(200, 0, 0, 0.288), rgba(200, 0, 0, 0.178)),
+              url("./images/footerup/join-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.joinContent{
+  max-width: 900px;
+  color: white;
+}
+#signup{
+  position: relative;
+}
+.joinContent h2{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.subtext{
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.signup{
+  max-width: 700px;
+  margin: auto;
+}
+
+.nameRow{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.signup input{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.signup input[type="email"]{
+  margin-bottom: 20px;
+}
+
+.signupBtn{
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 12px 40px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.signupBtn:hover{
+  background: white;
+  color: red;
+}
+
+.terms{
+  font-size: 0.85rem;
+  margin-top: 25px;
+  line-height: 1.5;
+}
+@media (max-width:992px){
+  .nameRow{
+    flex-direction: column;
+  }
+
+  .joinContent h2{
+    font-size: 2rem;
+  }
+}
+
+
+/* BOOST NUTRITION */
+
+.jointext{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5392f;
+  padding: 20px;
+}
+
+.joinimage{
+  display: flex;
+  flex-wrap: wrap;               /* allow wrapping */
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5392f;
+  padding: 20px;
+}
+
+.joinimage img{
+  width: 24%;                    /* 4 images in one row (desktop) */
+  height: 320px;
+  object-fit: cover;
+}
+
+/* Tablet & below → 2 images per row */
+@media (max-width: 992px){
+  .joinimage img{
+    width: 49%;                  /* 2 images per row */
+    height: auto;
+  }
+}
+
+/* Mobile text layout */
+@media (max-width: 576px){
+  .jointext{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+

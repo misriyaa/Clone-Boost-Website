@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Popup</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <style>
+    /* * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: rgb(228, 228, 228);
+      height: 400px;
+      width: 600px;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items:center ;
+      justify-content: center;
+    }
+    .container input{
+      width:80%;
+      padding: 10px;
+    }
+     */
+     * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  background: #f5f5f5;
+  margin-top: 20px;
+}
+
+.container {
+  background-color: rgb(228, 228, 228);
+  width: 90%;              /* mobile friendly */
+  max-width: 600px;       /* desktop limit */
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.container h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.close{
+  background-color: rgb(207, 223, 248);
+  align-self: self-end;
+  padding: 2px;
+  border: 0cap;
+}
+p{
+  color:rgb(255, 255, 255);
+   background-color: rgb(166, 7, 7); 
+   display:none;
+   padding: 10px;
+   align-self:flex-start;
+   margin-left: 80px;
+}
+  </style>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#btn").click(function(){
+    let value = $("#email").val();
+
+    if(value === ""){
+      $("#error").text("Please fill out this field").show();
+    } else {
+      $("#error").hide();
+      alert(value); // or do login logic
+    }
+  });
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <button class="close"><a href="./index.html" class="text-dark"><i class="bi bi-x-lg"></i></a><BR>CLOSE</button>
+    <h1>Sign In</h1><br>
+    <input type="text" placeholder="email" id="email"><br>
+    <p id="error"></p>
+    <input type="password" placeholder="Password"><br>
+    <div>
+
+      <button class="btn btn-danger" id="btn">Log in</button>
+      <button href="" class="btn btn-outline-danger ">Create An Account</button>
+    </div>
+<a href="" class="text-danger mt-3">Forget Password?</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

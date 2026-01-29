@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+
+                let email = $("#email").val();
+                let last = $("#last").val();
+                let first = $("#first").val();
+
+                if (email === "") {
+                    shake();
+                }
+                else if (last === "") {
+                    shake();
+                }
+                else if (first === "") {
+                    shake();
+                }
+                else {
+                    alert("login Success");
+                }
+
+            });
+        });
+
+        function shake() {
+            $("#signup")
+                .animate({ left: '-50px' }, 100)
+                .animate({ left: '0px' }, 100)
+                .animate({ left: '-50px' }, 100)
+                .animate({ left: '0px' }, 100)
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <!--TOP FIND A STORE AND FREE GROUND OFFER-->
+
+    <div class="findAStore container-fluid px-lg-5 px-3 p-lg-2">
+        <div class="left">
+            <a href="https://www.boost.com/products" class="mx-auto mx-lg-0">Free Ground Shipping On Oders $49.95 or
+                More</a>
+        </div>
+        <div class="right ">
+            <div> <i class="bi bi-geo-alt-fill"></i>&nbsp;
+                <a href=""> Find a Store</a>
+            </div>&nbsp;&nbsp;
+            <div><i class="bi bi-person-bounding-box"></i>&nbsp;
+                <a href="">For Helthcare Proffessionals</a>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------NAVBAR------------------------------>
+
+    <!-----------------------NAVBAR------------------------------>
+
+    <nav class="navbar navbar-expand-lg  px-3 px-lg-5 py-md-2 py-sm-1 py-lg-1 ">
+
+        <!-- MOBILE: HAMBURGER (LEFT) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LOGO (CENTER MOBILE, LEFT DESKTOP) -->
+        <a class="navbar-brand mx-auto mx-lg-0" href="#">
+            <img src="./images/boost-logo.png" height="70">
+        </a>
+
+        <!-- DESKTOP MENU -->
+        <div class="collapse navbar-collapse d-none d-lg-flex me-lg-5 me-sm-1">
+            <ul class="navbar-nav ms-auto me-4 gap-lg-5 fw-bold d-flex align-items-center text-nowrap">
+                <!--------SHOP------------>
+                <li class="nav-item nav-hover">
+                    <a href="./index.html" class="text-decoration-none text-dark">SHOP</a>
+                    <i class="bi bi-chevron-down" id="down"></i>
+                    <div class="hover-box">
+                        <div class="flex d-flex mx-5 my-5 justify-content-around ">
+                            <!--------------   SHOP BY SELLERS  ------------------->
+                            <div class="first">
+                                <h5><B>SHOP BY BEST SELLERS</B></h5>
+                                <ul class="lh-base">
+                                    <li><a href="">BOOST Advanced Nutrional Shake</a></li>
+                                    <li><a href="">BOOST Max Nutritional Shake</a></li>
+                                    <li><a href="">BOOST High Protein Nutritional Drink</a></li>
+                                    <li><a href="">BOOST Very High Calorie Nutritional Drink</a></li>
+                                    <li><a href="">BOOST Orginal Nutrional Drink</a></li>
+                                    <li><a href="">BOOST Plus Nutritional Drink</a></li>
+                                    <li><a href="">BOOST Glucose Control Nutrional Drink</a></li>
+                                    <a href="" class="btn btn-danger mt-5">SHOP ALL PRODUCTS</a>
+                                </ul>
+                            </div>
+
+                            <!---------------- SHOP BY CATEGORY -------------------->
+                            <div class="second">
+                                <h5><b>SHOP BY CATEGORY</b></h5>
+                                <ul>
+                                    <li><a href="">High Protien Nutrion</a></li>
+                                    <li><a href="">Everyday Nutrion</a></li>
+                                    <li><a href="">Diabetes-Friendly Products</a></li>
+                                    <li><a href="">high Calorie Nutrition</a></li>
+                                </ul>
+                            </div>
+
+                            <!------------- SHOP BY FLAVOUR-----------------  -->
+                            <div class="third">
+                                <h5><b>SHOP BY FLAVOR</b></h5>
+                                <ul>
+                                    <li>
+                                        <img src="./images/shop/Chocolate" alt="" height="35px" width="35px">
+                                        <a href="">Rich Chocolate</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Vanilla" alt="" height="35px" width="35px">
+                                        <a href="">Very Vanilla</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Strawberry" alt="" height="35px" width="35px">
+                                        <a href="">Creamy Strawberry</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Wild-Berry" alt="" height="35px" width="35px">
+                                        <a href="">Wild Berry</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Variety-Pack" alt="" height="35px" width="35px">
+                                        <a href="">Variety Pack</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Peaches-and-Cream" alt="" height="35px" width="35px">
+                                        <a href="">Peaches & Creme</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Cinnabon" alt="" height="35px" width="35px">
+                                        <a href="">Cinnabon</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Caramel" alt="" height="35px" width="35px">
+                                        <a href="">Caramel</a>
+                                    </li>
+                                    <li>
+                                        <img src="./images/shop/Orange" alt="" height="35px" width="35px">
+                                        <a href="">Orange</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-------------- PROTIEN CALCULATOR---------- -->
+                            <div class="four">
+                                <img src="./images/shop/bottle_boost.png" alt="" height="30px" width="20px">
+                                <h5><b>BOOST protien <br>Calculator</b></h5>
+                                <h6>Lern How Much <br> Protien You Need With<br>Our Quiz, 2-Minutes<br>Quiz </h6>
+                                <a href="">TAKE THE QUIZ</a>
+                            </div>
+
+                            <!---------------FIND IN STORE---------------->
+                            <div class="four">
+                                <img src="./images/shop/map_boost.png" alt="" height="30px" width="20px">
+                                <h5><b>BOOST protien <br>Calculator</b></h5>
+                                <h6>Lern How Much <br> Protien You Need With<br>Our Quiz, 2-Minutes<br>Quiz </h6>
+                                <a href="">TAKE THE QUIZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <!------------------ABOUT US------------>
+                <li class="nav-item nav-hover"><a href="./about.html" class="text-decoration-none text-dark">ABOUT
+                        US</a>
+                    <i class="bi bi-chevron-down" id="down"></i>
+                    <div class="hover-box">
+                        <div class="aboutus">
+                            <h5><b>Discover How BOOST Support Everyday Wellness and Nutrion</b></h5>
+                            <div class="aboutimgmain">
+                                <div>
+                                    <img src="./images/about us/PhotoshopExtension_Image.png" alt="" height="260px"
+                                        width="200px">
+                                    <p>About BOOST</p>
+                                </div>
+                                <div>
+                                    <img src="./images/about us/PhotoshopExtension_Image (1).png" alt="" height="260px"
+                                        width="200px">
+                                    <p>Why Choose BOOST</p>
+                                </div>
+                                <div>
+                                    <img src="./images/about us/PhotoshopExtension_Image (2).png" alt="" height="260px"
+                                        width="200px">
+                                    <p>Great Taste Guarabtee</p>
+                                </div>
+                                <div>
+                                    <img src="./images/about us/PhotoshopExtension_Image (3).png" alt="" height="260px"
+                                        width="200px">
+                                    <p>Real Stories</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!------------------- PRPGRAMS AND PERKS -------- -->
+                <li class="nav-item nav-hover">
+                    <a href="./programs.html" class="text-decoration-none text-dark">PROGRAMS & PERKS</a>
+                    <i class="bi bi-chevron-down" id="down"></i>
+                    <div class="hover-box">
+                        <div class="aboutus">
+                            <div class="aboutimgmain">
+                                <div>
+                                    <img src="./images/programs and perks/c2_BOOST_Rewards-min.avif" alt=""
+                                        height="260px" width="200px">
+                                    <p>BOOST Rewards</p>
+                                </div>
+                                <div>
+                                    <img src="./images/programs and perks/c2_BOOST_SubscribeSave.png" alt=""
+                                        height="260px" width="200px">
+                                    <p>Subscribe & Save</p>
+                                </div>
+                                <div>
+                                    <img src="./images/programs and perks/offers_2x.png" alt="" height="260px"
+                                        width="200px">
+                                    <p>Offers</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- ----------------------------------------- -->
+            </ul>
+        </div>
+
+        <!-- RIGHT ICONS -->
+        <div class="d-flex align-items-center gap-4 text-danger">
+            <div class=" d-lg-block text-center">
+                <i class="bi bi-search fs-5 iconn"></i><br>
+                <b class="d-none d-lg-block">Search</b>
+            </div>
+
+            <div class="d-none d-lg-block text-center">
+                <a href="/signn.html"><i class="bi bi-person fs-5 iconn"></i></a> <br>
+                <b>Sign In</b>
+            </div>
+
+            <div class=" d-lg-block text-center">
+                <i class="bi bi-cart fs-5 iconn"></i><br>
+                <b class="d-none d-lg-block">cart</b>
+            </div>
+        </div>
+    </nav>
+    <!------------------ OFFCANVAS------------- -->
+    <div class="offcanvas offcanvas-top" id="mobileMenu">
+        <div class="offcanvas-header">
+            <button class="btn-close ms-auto" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+         <div class="offcanvas-body text-center">
+            <ul class="navbar-nav gap-4 fw-bold">
+                <li class="nav-item"><a href="/index.html" class=text-dark>SHOP</a></li>
+                <li class="nav-item"><a href="/about.html" class="text-dark">ABOUT US</a></li>
+                <li class="nav-item"><a href="/programs.html" class="text-dark">PROGRAMS & PERKS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="container-fluid herosection">
+        <h2>ABOUT BOOST</h2>
+    </div>
+
+    <!-- OUR WHY -->
+    <div class="container-fluid ourWhy h-75">
+        <div class="container">
+            <h1>OUR WHY</h1>
+            <p>At BOOST®, we believe that as you age, the right nutrition can make all the difference. We also know that
+                everyone's needs are different. So, we developed delicious nutrient-packed products, which are
+                scientifically designed with a unique combination of ingredients, to help you get the right nutrition
+                and get more out of life.</p>
+        </div>
+    </div>
+
+    <!-- CERTIFIED -->
+    <div class="container-fluid certified">
+        <div class="container certified">
+            <img src="./aboutusImages/Boost_Web_B_Corp_Web_2000x2000.avif" alt="" class="img-fluid certified-img">
+            <p>To achieve this certification, businesses are required to meet rigorous social and environmental
+                standards. We are joining a global movement of companies and consumers using business as a force for
+                good, committed to creating positive social and environmental impact. Keep an eye on our social pages
+                and right here on BOOST.com for even more updates about this exciting announcement</p>
+        </div>
+    </div>
+
+
+    <!-- OUR PROMISES -->
+
+    <div class="container-fluid mt-5 promises">
+        <div class="container text-center">
+            <h1>OUR PROMISES</h1>
+            <p>We strive to offer nutritional choices to help support confident aging by delivering the quality you can
+                count on, and integrating sustainability with practices to protect our planet. Explore and learn more
+                about the BOOST® difference.</p>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row g-4">
+
+            <!-- CARD 1 -->
+            <div class="col-12 col-md-4">
+                <div class="img-box">
+                    <img src="./aboutusImages/1.png" class="img-fluid" alt="">
+                    <h2 class="img-text">PEOPLE</h2>
+                </div>
+                <p class="mt-3 text-center">Supporting you with our commitment to providing tailored nutrition is
+                    important to us. Our wide array of nutrient-packed products provide high-quality protein, and
+                    essential vitamins and minerals so you can feel confident that you are helping to get the
+                    nourishment you need. Learn more</p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="col-12 col-md-4">
+                <div class="img-box">
+                    <img src="./aboutusImages/2.png" class="img-fluid" alt="">
+                    <h2 class="img-text">PLANET</h2>
+                </div>
+                <p class="mt-3 text-center">We are diligently working to make the planet a healthier place. We do that
+                    by balancing emissions, prioritizing waste reduction, and helping to protect our shared resources.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-12 col-md-4">
+                <div class="img-box">
+                    <img src="./aboutusImages/3.png" class="img-fluid" alt="">
+                    <h2 class="img-text purpose">PURPOSE</h2>
+                </div>
+                <p class="mt-3 text-center">Living life to the fullest is all about doing the things you enjoy, spending
+                    time with loved ones and turning cherished moments into memories. That’s why we will always provide
+                    you with the essential nutrients you need to empower confident aging.</p>
+            </div>
+
+        </div>
+        <a href="" class="btn btn-danger text-center" style="display: block;margin: auto;">START SHOPPING</a>
+    </div>
+
+
+      <!-- FIND A STORE -->
+    <div class="container-fluid FindAstore">
+        <div class="container findStore py-5">
+            <div>
+                <h2>FIND BOOST® AT A STORE NEAR YOU</h2>
+                <p>Shop for your favorite BOOST® nutritional drinks and find your favorite flavors at a store near you.
+                </p>
+            </div>
+            <div>
+                <a href="" class="btn btn-danger">FIND BOOST®<br>NEAR YOU</a>
+            </div>
+        </div>
+    </div>
+
+     <!-- JOIN OUR COMMUNITY -->
+   <div class="container-fluid joinCommunity">
+        <div class="joinContent text-center">
+            <h2>JOIN OUR COMMUNITY</h2>
+
+            <p class="subtext">
+                Join the BOOST® community to stay up-to-date with new products, discounts and more!
+            </p>
+
+            <div class="signup" id="signup">
+                <div class="nameRow">
+                    <input type="text" placeholder="First Name" id="first">
+                    <input type="text" placeholder="Last Name" id="last">
+                </div>
+
+                <input type="email" placeholder="Email Address" id="email">
+
+                <button class="btn signupBtn btn-outline-light" id="btn">SIGN UP</button>
+            </div>
+
+            <p class="terms">
+                By clicking SIGN UP, I agree to receive emails and other marketing communications from BOOST® including
+                special offers, promotions, and more. I certify that I have read and agree with the
+                <u>Terms & Conditions</u> and <u>Privacy Policy</u>.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- BOOST NUTRITION -->
+    <div class="container-fluid p-0">
+
+        <div class="jointext">
+            <h2>@BOOSTNUTRITION</h2>
+            <div>
+                <i class="bi bi-facebook btn btn-primary"></i>
+                <i class="bi bi-instagram btn btn-primary"></i>
+            </div>
+        </div>
+
+        <div class="joinimage">
+            <img src="./images/footerup/Cinn_BOOST04_FlatLay_infeed.avif">
+            <img src="./images/footerup/boost_website_image_option2.png">
+            <img src="./images/footerup/Boost_GC_Updates_Lifestyle_Product_Image_1000x1000.avif">
+            <img src="./images/footerup/29NW_Nestle_Boost_1-20-1.jpg">
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+
+            <div class="row">
+
+                <!-- LOGO + SOCIAL -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h3>BOOST</h3>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href=""><i class="bi bi-facebook text-white"></i></a>
+                        <a href=""><i class="bi bi-instagram text-white"></i></a>
+                        <a href=""><i class="bi bi-pinterest text-white"></i></a>
+                        <a href=""><i class="bi bi-youtube text-white"></i></a>
+                    </div>
+                </div>
+
+                <!-- SHOP -->
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>SHOP</h5>
+                    <ul class="list-unstyled">
+                        <li>EVERYDAY NUTRITION</li>
+                        <li>HIGH PROTEIN NUTRITION</li>
+                        <li>DIABETES-FRIENDLY</li>
+                        <li>SPECIALTY NUTRITION</li>
+                        <li>HIGH CALORIE</li>
+                        <li>SHOP ALL</li>
+
+                    </ul>
+                </div>
+
+                <!-- REWARDS -->
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>REWARDS</h5>
+                    <ul class="list-unstyled">
+                        <li>OFFERS</li>
+                        <li>Boost® REWARDS</li>
+                    </ul>
+                </div>
+
+                <!-- DISCOVERY -->
+                <div class="col-12 col-md-2 mb-4">
+                    <h5>DISCOVERY</h5>
+                    <ul class="list-unstyled">
+                        <li>WHY BOOST</li>
+                        <li>RECIPES</li>
+                        <li>BLOG</li>
+                        <li>QUALITY NUTRITION</li>
+
+                    </ul>
+                </div>
+
+                <!-- INFORMATION -->
+                <div class="col-12 col-md-3 mb-4">
+                    <h5>INFORMATION</h5>
+                    <ul class="list-unstyled">
+                        <li>FAQ</li>
+                        <li>PROTEIN CALCULATOR</li>
+                        <li>FIND A STORE</li>
+                        <li>CONTACT US</li>
+                        <li>SIGN IN</li>
+                        <li>SHIPPING & RETURNS</li>
+                        <li>SUPPLY CHAIN</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary">
+
+            <div class="row">
+                <div class="col text-center small">
+                    <p>
+                        Free Shipping & Handling offer is available on single orders totaling $49.95 or more after any
+                        other discounts (before any applicable taxes). A flat rate of $7.95 will apply for shipping &
+                        handling on orders under $49.95. Offer valid on ground shipping and only in the continental
+                        U.S.; not valid on other shipment methods. All orders to Alaska and Hawaii will be charged
+                        $29.95 for shipping and handling.
+                        <a href="" class="text-white"> See full Shipping terms.</a>
+                    </p>
+                    <p>All trademarks are owned by Société des Produits Nestlé S.A., Vevey, Switzerland or used with permission. © 2026 Nestlé.</p>
+
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="text-white">Privacy Policy</a>
+                        <a href="#" class="text-white">Health Data Notice</a>
+                        <a href="#" class="text-white">Terms & Conditions</a>
+                        <a href="#" class="text-white">Your Privacy Choices</a>
+                        <a href="#" class="text-white">Privacy Policy</a>
+                        <a href="#" class="text-white">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
